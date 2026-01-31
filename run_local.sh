@@ -51,8 +51,9 @@ if ! python -c "import fastapi" 2>/dev/null; then
     exit 1
 fi
 
-# Add Agentic_view to path for workflow imports
-export PYTHONPATH="${SCRIPT_DIR}:${SCRIPT_DIR}/../Agentic_view:${PYTHONPATH}"
+# Add parent Agentic_view folder to path for workflow imports
+# Structure: Agentic_view/healthcare-api/ (this script is inside healthcare-api)
+export PYTHONPATH="${SCRIPT_DIR}:${SCRIPT_DIR}/..:${PYTHONPATH}"
 
 echo ""
 echo "Starting server..."
