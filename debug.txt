@@ -1,3 +1,15 @@
+PS C:\Users\msivaku1\Documents\Agentic_view\healthcare-api> python .\test_websocket.py
+Connecting to ws://localhost:8000/ws/chat...
+Connected!
+
+Sending: Hello, what can you help me with?
+
+Receiving responses:
+--------------------------------------------------
+[STATUS] Processing your question...
+[ERROR] Workflow not initialized. Check server logs.
+PS C:\Users\msivaku1\Documents\Agentic_view\healthcare-api> 
+
 Of course! Let me explain everything step by step in a beginner-friendly way. 😊
 
 🎯 What We're Trying to Do
