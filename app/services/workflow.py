@@ -8,8 +8,10 @@ from pathlib import Path
 from typing import Dict, Any, AsyncGenerator, Optional
 from datetime import datetime, timezone
 
-# Add the original codebase to path for imports
-AGENTIC_VIEW_PATH = Path(__file__).parent.parent.parent.parent / "Agentic_view"
+# Add the parent Agentic_view folder to path for imports
+# Structure: Agentic_view/healthcare-api/app/services/workflow.py
+#            ^^^^^^^^^^^^ This is what we need (3 levels up)
+AGENTIC_VIEW_PATH = Path(__file__).parent.parent.parent.parent
 if str(AGENTIC_VIEW_PATH) not in sys.path:
     sys.path.insert(0, str(AGENTIC_VIEW_PATH))
 
